@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f2f2f2"
+    android:background="@color/background"
     tools:context="com.example.android.helloandroid.MainActivity">
 
     <ImageView
@@ -23,18 +23,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#01b4dc"
-            android:textStyle="bold"
-            android:textSize="34sp"
+            android:textColor="@color/text_color"
+            android:textAppearance="@style/title_font"
+            android:textSize="@dimen/text_size1"
             android:text="@string/title"
             android:textAlignment="center"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#2c3c49"
-            android:textStyle="italic"
-            android:textSize="16sp"
+            android:textColor="@color/text_color1"
+            android:textAppearance="@style/caption_font"
+            android:textSize="@dimen/text_size2"
             android:text="@string/be_in_demand"
             android:textAlignment="center"/>
 
@@ -45,9 +45,9 @@
             android:paddingLeft="@dimen/activity_left_padding"
             android:drawablePadding="@dimen/activity_drawable_padding"
             android:drawableLeft="@drawable/ic_location_on_black_18dp"
-            android:textSize="20sp"
+            android:textSize="@dimen/text_size3"
             android:text="@string/location"
-            android:textColorLink="#2c3c49"
+            android:textColorLink="@color/text_color1"
             android:autoLink="map"/>
 
         <TextView
@@ -57,9 +57,9 @@
             android:paddingLeft="@dimen/activity_left_padding"
             android:drawablePadding="@dimen/activity_drawable_padding"
             android:drawableLeft="@drawable/ic_local_phone_black_18dp"
-            android:textSize="20sp"
+            android:textSize="@dimen/text_size3"
             android:text="@string/phone"
-            android:textColorLink="#2c3c49"
+            android:textColorLink="@color/text_color1"
             android:autoLink="phone"/>
 
         <TextView
@@ -69,9 +69,9 @@
             android:paddingLeft="@dimen/activity_left_padding"
             android:drawablePadding="@dimen/activity_drawable_padding"
             android:drawableLeft="@drawable/ic_language_black_18dp"
-            android:textSize="20sp"
+            android:textSize="@dimen/text_size3"
             android:text="@string/website"
-            android:textColorLink="#2c3c49"
+            android:textColorLink="@color/text_color1"
             android:autoLink="web"/>
 
     </LinearLayout>
