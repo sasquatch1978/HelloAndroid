@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/udacity_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/photo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_top_padding"
+        android:layout_below="@id/udacity_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#01b4dc"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:text="@string/title"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2c3c49"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:text="@string/be_in_demand"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_top_padding"
+            android:paddingLeft="@dimen/activity_left_padding"
+            android:drawablePadding="@dimen/activity_drawable_padding"
+            android:drawableLeft="@drawable/ic_location_on_black_18dp"
+            android:textSize="20sp"
+            android:text="@string/location"
+            android:textColorLink="#2c3c49"
+            android:autoLink="map"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_top_padding"
+            android:paddingLeft="@dimen/activity_left_padding"
+            android:drawablePadding="@dimen/activity_drawable_padding"
+            android:drawableLeft="@drawable/ic_local_phone_black_18dp"
+            android:textSize="20sp"
+            android:text="@string/phone"
+            android:textColorLink="#2c3c49"
+            android:autoLink="phone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_top_padding"
+            android:paddingLeft="@dimen/activity_left_padding"
+            android:drawablePadding="@dimen/activity_drawable_padding"
+            android:drawableLeft="@drawable/ic_language_black_18dp"
+            android:textSize="20sp"
+            android:text="@string/website"
+            android:textColorLink="#2c3c49"
+            android:autoLink="web"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
