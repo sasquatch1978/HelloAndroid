@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
+    android:orientation="vertical"
     tools:context="com.example.android.helloandroid.MainActivity">
 
     <ImageView
@@ -13,67 +14,44 @@
         android:adjustViewBounds="true"
         android:src="@drawable/photo" />
 
-    <LinearLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="@dimen/activity_top_padding"
-        android:layout_below="@id/udacity_image"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/textTopMargin"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="@color/titleColor"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text_color"
-            android:textAppearance="@style/title_font"
-            android:textSize="@dimen/text_size1"
-            android:text="@string/title"
-            android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/caption"
+        android:textAlignment="center"
+        android:textColor="@color/captionColor"
+        android:textSize="@dimen/captionSize"
+        android:textStyle="italic" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text_color1"
-            android:textAppearance="@style/caption_font"
-            android:textSize="@dimen/text_size2"
-            android:text="@string/be_in_demand"
-            android:textAlignment="center"/>
+    <TextView
+        style="@style/Links"
+        android:autoLink="all"
+        android:drawableLeft="@drawable/location"
+        android:drawableStart="@drawable/location"
+        android:text="@string/location" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/activity_top_padding"
-            android:paddingLeft="@dimen/activity_left_padding"
-            android:drawablePadding="@dimen/activity_drawable_padding"
-            android:drawableLeft="@drawable/ic_location_on_black_18dp"
-            android:textSize="@dimen/text_size3"
-            android:text="@string/location"
-            android:textColorLink="@color/text_color1"
-            android:autoLink="map"/>
+    <TextView
+        style="@style/Links"
+        android:autoLink="all"
+        android:drawableLeft="@drawable/phone"
+        android:drawableStart="@drawable/phone"
+        android:text="@string/phone" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/activity_top_padding"
-            android:paddingLeft="@dimen/activity_left_padding"
-            android:drawablePadding="@dimen/activity_drawable_padding"
-            android:drawableLeft="@drawable/ic_local_phone_black_18dp"
-            android:textSize="@dimen/text_size3"
-            android:text="@string/phone"
-            android:textColorLink="@color/text_color1"
-            android:autoLink="phone"/>
+    <TextView
+        style="@style/Links"
+        android:autoLink="all"
+        android:drawableLeft="@drawable/web"
+        android:drawableStart="@drawable/web"
+        android:text="@string/website" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/activity_top_padding"
-            android:paddingLeft="@dimen/activity_left_padding"
-            android:drawablePadding="@dimen/activity_drawable_padding"
-            android:drawableLeft="@drawable/ic_language_black_18dp"
-            android:textSize="@dimen/text_size3"
-            android:text="@string/website"
-            android:textColorLink="@color/text_color1"
-            android:autoLink="web"/>
-
-    </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>

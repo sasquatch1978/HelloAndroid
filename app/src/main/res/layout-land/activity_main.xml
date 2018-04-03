@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.android.helloandroid.MainActivity">
+
+    <LinearLayout
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/drawablePadding"
+        android:layout_marginStart="@dimen/drawablePadding"
+        android:layout_marginTop="@dimen/drawablePadding"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/udacity_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/photo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/titleTopMarginLand"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="@color/titleColor"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/caption"
+            android:textAlignment="center"
+            android:textColor="@color/captionColor"
+            android:textSize="@dimen/captionSize"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/LinksLand"
+            android:autoLink="all"
+            android:drawableLeft="@drawable/location"
+            android:drawableStart="@drawable/location"
+            android:text="@string/location" />
+
+        <TextView
+            style="@style/LinksLand"
+            android:autoLink="all"
+            android:drawableLeft="@drawable/phone"
+            android:drawableStart="@drawable/phone"
+            android:text="@string/phone" />
+
+        <TextView
+            style="@style/LinksLand"
+            android:autoLink="all"
+            android:drawableLeft="@drawable/web"
+            android:drawableStart="@drawable/web"
+            android:text="@string/website" />
+
+    </LinearLayout>
+</LinearLayout>

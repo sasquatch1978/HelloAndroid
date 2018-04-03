@@ -8,12 +8,25 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="title_font" parent="@android:style/TextAppearance">
-        <item name="android:textStyle">bold</item>
+    <style name="Links">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/drawableLeftMargin</item>
+        <item name="android:layout_marginTop">@dimen/textTopMargin</item>
+        <item name="android:drawablePadding">@dimen/drawablePadding</item>
+        <item name="android:textColorLink">@color/captionColor</item>
+        <item name="android:textSize">@dimen/linkSize</item>
     </style>
 
-    <style name="caption_font" parent="@android:style/TextAppearance">
-        <item name="android:textStyle">italic</item>
+    <style name="LinksLand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/drawableLeftMargin</item>
+        <item name="android:layout_marginRight">@dimen/drawableLeftMargin</item>
+        <item name="android:layout_marginTop">@dimen/textTopMarginLand</item>
+        <item name="android:drawablePadding">@dimen/drawablePadding</item>
+        <item name="android:textColorLink">@color/captionColor</item>
+        <item name="android:textSize">@dimen/linkSize</item>
     </style>
 
 </resources>
