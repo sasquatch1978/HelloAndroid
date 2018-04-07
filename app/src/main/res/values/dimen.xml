@@ -5,7 +5,7 @@
     <dimen name="textTopMarginLand">55dp</dimen>
     <dimen name="drawableLeftMargin">40dp</dimen>
     <dimen name="drawablePadding">16dp</dimen>
-    <dimen name="layoutWidth">0dp</dimen>
+    <dimen name="zero">0dp</dimen>
     <dimen name="titleSize">34sp</dimen>
     <dimen name="captionSize">16sp</dimen>
     <dimen name="linkSize">20sp</dimen>
